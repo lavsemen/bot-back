@@ -212,7 +212,7 @@ export class GoogleSheetConnectorService{
         return await sheets.spreadsheets.values.append({
             spreadsheetId,
             range,
-            valueInputOption: 'USER_ENTER',
+            valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values
             }
